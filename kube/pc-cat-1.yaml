@@ -1,0 +1,7 @@
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: cat-1
+value: 1000
+globalDefault: true
+description: "cat-1"

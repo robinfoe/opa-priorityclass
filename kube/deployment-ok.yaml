@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: web
+  name: web
+spec:
+  selector:
+    matchLabels:
+      app: web
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+      - image: nginx:1.16
+        name: nginx
+        resources: {}
+      priorityClassName: cat-1
+status: {}

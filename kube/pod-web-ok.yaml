@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: web
+  name: web
+spec:
+  containers:
+  - image: nginx:1.16
+    name: web
+  priorityClassName: cat-1
+status: {}

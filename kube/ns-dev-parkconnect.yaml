@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    allow-priority-class: "cat-1"
+    ingress-whitelist: "*.qa.acmecorp.com,*.internal.acmecorp.com"
+  name: dev-parkconnect

@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations:
+    allow-priority-class: "cat-1,cat-2,cat-3"
+    ingress-whitelist: "*.acmecorp.com"
+  name: prod-parkconnect

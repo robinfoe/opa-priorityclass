@@ -1,0 +1,27 @@
+{
+  "request": {
+    "operation": "CREATE",
+    "apiVersion": "v1",
+    "kind": {
+      "kind": "Pod"
+    },
+    "metadata": {
+      "name": "nginx",
+      "labels": {
+        "env": "test"
+      }
+    },
+    "object": {
+      "spec": {
+        "containers": [
+          {
+            "name": "nginx",
+            "image": "nginx",
+            "imagePullPolicy": "IfNotPresent"
+          }
+        ],
+        "priorityClassName": "high-priority"
+      }
+    }
+  }
+}
